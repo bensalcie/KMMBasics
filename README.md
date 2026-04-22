@@ -13,6 +13,12 @@ This is a Kotlin Multiplatform project targeting Android, iOS, Desktop (JVM).
   you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
 
 ### Build and Run Android Application
+### In this branch, we do the setup to the following.
+#### Lesson one
+- Basic KMM/CMP Setup
+- Expect/Actual Key works.
+- Platform specific code
+- Structure.
 
 To build and run the development version of the Android app, use the run configuration from the run widget
 in your IDE’s toolbar or build it directly from the terminal:
