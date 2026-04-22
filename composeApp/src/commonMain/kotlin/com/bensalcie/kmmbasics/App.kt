@@ -20,8 +20,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import kmmbasics.composeapp.generated.resources.Res
 import kmmbasics.composeapp.generated.resources.compose_multiplatform
+import kmmbasics.composeapp.generated.resources.hello_world
 import kmmbasics.composeapp.generated.resources.vector
 import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.stringResource
 
 @Composable
 fun App(batteryManager: BatteryManager) {
@@ -64,7 +66,7 @@ fun App(batteryManager: BatteryManager) {
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         Image(painterResource(Res.drawable.vector), null, modifier = Modifier.size(300.dp))
-                        Text("Image from Resources ")
+                        Text(text = stringResource(Res.string.hello_world))
                     }
                 }
             }
