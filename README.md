@@ -19,6 +19,14 @@ This is a Kotlin Multiplatform project targeting Android, iOS, Desktop (JVM).
 - Expect/Actual Key works.
 - Platform specific code
 - Structure.
+#### Lesson Two
+- Share resources KMP
+- Drawables, Fonts, Static images
+- Strings
+- Locale
+- Colors
+
+
 
 To build and run the development version of the Android app, use the run configuration from the run widget
 in your IDE’s toolbar or build it directly from the terminal:
