@@ -27,6 +27,9 @@ This is a Kotlin Multiplatform project targeting Android, iOS, Desktop (JVM).
 - Locale
 - Colors
 
+#### Lesson Three
+- Dependancy Injection
+- Koin
 
 
 To build and run the development version of the Android app, use the run configuration from the run widget
