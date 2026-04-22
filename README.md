@@ -20,6 +20,7 @@ This is a Kotlin Multiplatform project targeting Android, iOS, Desktop (JVM).
 - Platform specific code
 - Structure.
 #### Lesson Two
+- Localization & Internationalization 
 - Share resources KMP
 - Drawables, Fonts, Static images
 - Strings
