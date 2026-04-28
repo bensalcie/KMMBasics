@@ -1,3 +1,5 @@
+
+import org.gradle.kotlin.dsl.invoke
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
@@ -15,8 +17,10 @@ kotlin {
         compilerOptions {
             jvmTarget.set(JvmTarget.JVM_11)
         }
+
     }
-    
+
+
     listOf(
         iosArm64(),
         iosSimulatorArm64()
@@ -53,7 +57,18 @@ kotlin {
             implementation(libs.lifecycle.viewmodel)
             implementation(libs.jetbrains.navigation3.ui)
         }
+        androidInstrumentedTest.dependencies {
+            implementation(libs.core.ktx)
+            implementation(libs.compose.ui.test.junit4)
+        }
         commonTest.dependencies {
+            implementation(libs.kotlin.test)
+            implementation(kotlin("test-annotations-common"))
+            implementation(libs.assertk)
+            implementation(libs.ui.test)
+
+        }
+        jvmTest.dependencies {
             implementation(libs.kotlin.test)
         }
         jvmMain.dependencies {
@@ -74,6 +89,7 @@ android {
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     packaging {
         resources {
